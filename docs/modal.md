@@ -50,7 +50,7 @@ class ModalScreen extends React.Component {
   }
 }
 
-const MainStack = createStackNavigator(
+const MainStack = StackNavigator(
   {
     Home: {
       screen: HomeScreen,
@@ -64,7 +64,7 @@ const MainStack = createStackNavigator(
   }
 );
 
-const RootStack = createStackNavigator(
+const RootStack = StackNavigator(
   {
     Main: {
       screen: MainStack,
